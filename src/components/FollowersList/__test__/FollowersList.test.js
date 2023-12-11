@@ -36,12 +36,12 @@ describe("FollowersList", () => {
         const followerDivElement = await screen.findByTestId(`follower-item-0`)
         expect(followerDivElement).toBeInTheDocument();
     });
-    
+
     it('should fetch and render input element', async () => {
         render(
             <MockFollowersList />
         );
-    
+
         const followerDivElement = await screen.findByTestId(`follower-item-0`)
         expect(followerDivElement).toBeInTheDocument();
     });
